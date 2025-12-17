@@ -8,6 +8,6 @@ question_answers = {
     "This is Question E":[["Answer 1"],"This is Question I"],
     "This is Question F":[["Answer 1"],"This is Question I"],
     "This is Question G":[["Answer 1"],"This is Question I"],
-    "This is Question H":[["Answer 1"],"This is Question I"],
+    "This is Question H":[["Answer 1", "Answer 2"],"This is Question D", "This is Question I"],
     "This is Question I":[["Answer 1"],"END"],
 }

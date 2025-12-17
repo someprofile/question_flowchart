@@ -8,9 +8,6 @@ def question_unit(input_question_list, current_question):
 
     print(f"{current_question}\nSelect from these options: \n")
 
-
-    
-
     for item in choice[0]:
         print(f"{item}")
 
@@ -29,22 +26,22 @@ def question_unit(input_question_list, current_question):
 
 
 
-def flowchart(input_question_list, current_question):
+def flowchart(input_question_list, current_question, answer_collection = []):
     
     run = question_unit(input_question_list, current_question)
 
     if run[1] != "END":
-        
+        answer_collection.append(run[0])
         flowchart(input_question_list, run[1])
     else:
         print("END OF QUESTION LINE")
 
-    return
+    return answer_collection
 
 
 '''test = question_unit(question_answers, "This is Question A")
 
-print(test)'''
+print(f"{test}\n{test[0]}\n{test[1]}")'''
 
 test = flowchart(question_answers, "This is Question A")
 
